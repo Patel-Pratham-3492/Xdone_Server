@@ -10,9 +10,11 @@ connectDB();
 app.use(
   cors({
     origin: [
-      "https://xdone-server.onrender.com",
+      "http://localhost:5173",
+      "https://xdone-server.onrender.com" // add this later
     ],
-    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
   })
 );
 
