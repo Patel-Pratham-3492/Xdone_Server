@@ -7,9 +7,15 @@ require("dotenv").config();
 
 const app = express();
 connectDB();
-app.use(cors({
-  origin: "*"
-}));
+app.use(
+  cors({
+    origin: [
+      "https://xdone-server.onrender.com",
+    ],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 app.use("/tasks", taskRoutes);
