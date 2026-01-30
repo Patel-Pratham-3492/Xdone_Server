@@ -11,7 +11,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://xdone-server.onrender.com" // add this later
+      "https://xdone-owco.onrender.com" // add this later
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
