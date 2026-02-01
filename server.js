@@ -13,7 +13,7 @@ app.use(
       "http://localhost:5173",
       "https://xdone-owco.onrender.com" // add this later
     ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
     credentials: true
   })
 );
